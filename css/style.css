@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body ::-webkit-input-placeholder {
+    padding-left: 5px;
+  }
+  
+  body :-ms-input-placeholder {
+    padding-left: 5px;
+  }
+  
+  body ::-ms-input-placeholder {
+    padding-left: 5px;
+  }
+  
+  body ::placeholder {
+    padding-left: 5px;
+  }
+  
+  body p {
+    font-weight: 500;
+  }
+  
+  body .bold-text {
+    font-weight: 700;
+  }
+  
+  body select {
+    font-weight: 600;
+  }
+  
+  body .btn {
+    background-color: #01a101;
+    color: white;
+    font-weight: 700;
+  }
+  
+  body .btn:hover {
+    background-color: #0cb00c;
+  }
+  
+  body .btn:active {
+    background-color: #027b02;
+  }
+  
+  body .importante {
+    color: #01a101;
+    font-weight: 700;
+  }
+  
+  body h1 {
+    color: #027b02;
+    font-weight: 700;
+    text-decoration: underline;
+    padding-top: 30px;
+    margin-bottom: 15px;
+  }
+  
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  body main label {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  
+  body main .borrar-icon {
+    border-color: green;
+  }
+  
+  body main .borrar-icon:hover {
+    background-color: #db1515;
+    color: white;
+  }
+  
+  body main p {
+    font-size: 20px;
+  }
+  
+  body main h2 {
+    font-size: 35px;
+  }
+  
+  body main h1 {
+    font-size: 45px;
+  }
+  
+  body main .error {
+    color: red;
+    font-size: 1rem;
+  }
+  
+  body main .discount_container #bancos {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  body main .discount_container #bancos option {
+    font-weight: 500;
+    padding: 8px 5px 8px 5px;
+  }
+  
+  body main .discount_container #selector_descuentos {
+    font-weight: 600;
+  }
+  
+  body main .discount_container #selector_descuentos .barraverde {
+    padding: 8px 5px 8px 5px;
+  }
+  
+  body main .discount_container #selector_descuentos option {
+    font-weight: 500;
+    padding: 8px 5px 8px 5px;
+  }
+  
+  body main .discount_container #descuentos_otros .boton-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  
+  body main .discount_container #descuentos_otros .boton-container button {
+    margin-top: 10px;
+    width: 100px;
+  }
+  
+  body main .discount_container select {
+    max-width: 300px;
+  }
+  
+  body main .discount_container #descuentos {
+    display: none;
+  }
+  
+  body main .discount_container #numdescuento {
+    min-width: 150px;
+  }
+  
+  body main .discount_container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  body main .discount_container #botones_otros {
+    margin-bottom: 30px;
+  }
+  
+  body main .discount_container #botones_otros :first-child {
+    margin-right: 10px;
+  }
+  
+  body main .text-container #numerocuentas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  body main .text-container #numerocuentas #sumaresta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 10px;
+  }
+  
+  body main .text-container #numerocuentas #sumaresta button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 30px;
+    width: 30px;
+  }
+  
+  body main .text-container #numerocuentas #sumaresta #contadorsumaresta {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    bottom: 4px;
+  }
+  
+  body main .text-container #agregarproducto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .text-container #agregarproducto {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+    }
+  }
+  
+  body main .text-container #agregarproducto :first-child {
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .text-container #agregarproducto :first-child {
+      margin-bottom: 5px;
+    }
+  }
+  
+  body main .text-container #agregarproducto div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .text-container #agregarproducto div {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body main .text-container #agregarproducto div .inputprecio {
+    margin-left: 25px;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .text-container #agregarproducto div .inputprecio {
+      margin-left: 6px;
+    }
+  }
+  
+  body main .text-container #agregarproducto input {
+    margin-left: 6px;
+    width: 300px;
+  }
+  
+  body main .text-container #agregarproducto button {
+    color: white;
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .text-container #agregarproducto button {
+      margin-left: 6px;
+    }
+  }
+  
+  body main .products_container {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    background-color: #e7e7e7;
+  }
+  
+  body main .products_container .products {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .products_container .products {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body main .products_container .products select {
+    margin-right: 5px;
+  }
+  
+  body main .products_container .products .bold-text {
+    margin-right: 5px;
+  }
+  
+  body main .products_container .products .conjuto-productos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    body main .products_container .products .conjuto-productos {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body main .products_container .products .conjuto-productos .divpreciodesc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  body main .products_container .products .conjuto-productos .divpreciodesc b {
+    margin-right: 5px;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .products_container .products .conjuto-productos .divpreciodesc {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    body main .products_container .products .conjuto-productos .divpreciodesc b {
+      margin-right: 0px;
+    }
+  }
+  
+  body main .products_container .products .conjuto-productos .pcp {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  @media screen and (max-width: 1199px) {
+    body main .products_container .products .conjuto-productos .pcp {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body main .products_container .products .conjuto-productos .pcp .pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .products_container .products .conjuto-productos .pcp .pc {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body main .products_container .products .conjuto-productos .pcp .divprecio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  
+  @media screen and (max-width: 390px) {
+    body main .products_container .products .conjuto-productos .pcp .divprecio {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body main .products_container .products button {
+    border-style: hidden;
+    width: 30px;
+    background-color: #e7e7e7;
+  }
+  
+  body main .products_container .products .botones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 559px) {
+    body main .products_container .products .botones {
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+    }
+  }
+  
+  body main .products_container .products .botones :last-child {
+    position: relative;
+    bottom: 3px;
+  }
+  
+  body main .products_container .products .tachado {
+    text-decoration: line-through;
+  }
+  
+  body main .products_container .products select {
+    width: 66px;
+    display: inline-block;
+  }
+  
+  body main .products_container .products i {
+    font-size: 28px;
+    margin-left: 6px;
+    display: inline-block;
+    color: #01a101;
+  }
+  
+  body main .products_container .products i:hover {
+    color: #0cb00c;
+  }
+  
+  body main .products_container .products .edit_icon {
+    font-size: 25px;
+  }
+  
+  body main .products_container .products .error_icon {
+    position: relative;
+    font-size: 25px;
+  }
+  
+  body main .products_container .products .error_icon:hover {
+    color: #db1515;
+  }
+  
+  body main .boton-limpiar {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  body main .buscadores {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    body main .buscadores {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body main .buscadores #busquedanombre {
+    margin-bottom: 15px;
+  }
+  
+  body main .buscadores #busquedanombre input {
+    margin-left: 6px;
+    width: 300px;
+  }
+  
+  @media screen and (max-width: 423px) {
+    body main .buscadores #busquedanombre button {
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+  }
+  
+  body main .buscadores #busquedaprecio label {
+    margin-left: 15px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    body main .buscadores #busquedaprecio label {
+      margin-left: 0px;
+    }
+  }
+  
+  body main .buscadores #busquedaprecio input {
+    margin-left: 25px;
+    width: 300px;
+  }
+  
+  @media screen and (max-width: 540px) {
+    body main .buscadores #busquedaprecio input {
+      margin-left: 6px;
+    }
+  }
+  
+  @media screen and (max-width: 423px) {
+    body main .buscadores #busquedaprecio button {
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+  }
+  
+  body footer {
+    background-color: #e7e7e7;
+    padding: 20px 0px 20px 0px;
+    margin-top: 80px;
+  }
+  
+  body footer .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  body footer .container p {
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 488px) {
+    body footer .container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+    body footer .container .version {
+      margin-top: 15px;
+    }
+  }
+  
+  body footer .container .footer .redes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body footer .container .footer .redes {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+    }
+  }
+  
+  body footer .container .footer p {
+    margin-left: 5px;
+    color: black;
+  }
+  
+  body footer .container .footer .wspp {
+    color: #01a101;
+  }
+  
+  body footer .container .footer .mail {
+    color: #da0505;
+    margin-left: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body footer .container .footer .mail {
+      margin-left: 0px;
+    }
+  }
+  
+  body footer .container .footer a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  body footer .container .footer a i {
+    font-size: 40px;
+  }
+  /*# sourceMappingURL=style.css.map */
